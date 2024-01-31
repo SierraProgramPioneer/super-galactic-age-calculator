@@ -1,4 +1,7 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/styles.css";
+import SpaceAgeCalculator from "./js/person";
 
 
 
@@ -9,11 +12,14 @@ import "./css/styles.css";
 // Handle Form Submission
 function handleFormSubmission(event) {
     event.preventDefault();
-    console.log("event");
+    const human = new SpaceAgeCalculator;
+    console.log(human);
 }
 
 
-window.addEventListener("load", function () {
-    const submitButton = document.getElementById("submit");
+function submitButton() {
+    const submitButton = document.querySelector("form");
     submitButton.addEventListener("submit", handleFormSubmission);
-});
+}
+
+window.onload = submitButton;

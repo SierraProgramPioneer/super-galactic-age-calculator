@@ -5,9 +5,9 @@ describe("SpaceAgeCalculator", () => {
 
     test("should create a person with past, current, and future age", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
-        expect(person.pastAge).toEqual(1);
-        expect(person.currentAge).toEqual(30);
-        expect(person.futureAge).toEqual(80);
+        expect(person.pastEarthAge).toEqual(1);
+        expect(person.currentEarthAge).toEqual(30);
+        expect(person.futureEarthAge).toEqual(80);
     });
 
     test("should calculate earth years elapsed & remaining", () => {

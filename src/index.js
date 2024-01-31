@@ -5,20 +5,32 @@ import SpaceAgeCalculator from "./js/person";
 
 
 
-// Get Age
+// Display Results
 
-// Update User Interface
+function displayResults(mercuryResults, venusResults) {
+    const mercuryElapsed = document.getElementById("mercuryElapsed");
+    mercuryElapsed.textContent = " " + mercuryResults[0];
+    const mercuryCurrent = document.getElementById("mercuryCurrent");
+    mercuryCurrent.textContent = " " + mercuryResults[1];
+    const mercuryRemaining = document.getElementById("mercuryRemaining");
+    mercuryRemaining.textContent = " " + mercuryResults[2];
+
+    const venusElapsed = document.getElementById("venusElapsed");
+    venusElapsed.textContent = " " + venusResults[0];
+    const venusCurrent = document.getElementById("venusCurrent");
+    venusCurrent.textContent = " " + venusResults[1];
+    const venusRemaining = document.getElementById("venusRemaining");
+    venusRemaining.textContent = " " + venusResults[2];
+}
+
+// Calculate Space Age
 function calculateSpaceAges(human) {
-    const earthResults = human.calculateEarthAge();
-    console.log(earthResults);
     const mercuryResults = human.calculateMercuryAge();
-    console.log(mercuryResults);
     const venusResults = human.calculateVenusAge();
-    console.log(venusResults);
+    const earthResults = human.calculateEarthAge();
     const marsResults = human.calculateMarsAge();
-    console.log(marsResults);
     const jupiterResults = human.calculateJupiterAge();
-    console.log(jupiterResults);
+    displayResults(mercuryResults, venusResults, earthResults, marsResults, jupiterResults);
 }
 
 

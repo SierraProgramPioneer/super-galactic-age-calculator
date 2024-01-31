@@ -30,7 +30,11 @@ export default class SpaceAgeCalculator {
     }
 
     calculateMarsAge() {
-
+        const currentMarsAge = parseFloat((this.currentAge / 1.88).toFixed(2));
+        const elapsedMarsYears = parseFloat(((this.currentAge - this.pastAge) / 1.88).toFixed(2));
+        const remainingMarsYears = parseFloat(((this.futureAge - this.currentAge) / 1.88).toFixed(2));
+        const marsValues = [elapsedMarsYears, currentMarsAge, remainingMarsYears];
+        return marsValues;
     }
 
 }

@@ -14,7 +14,11 @@ export default class SpaceAgeCalculator {
     }
 
     calculateMercuryAge() {
-
+        const currentMercuryAge = parseFloat((this.currentAge / .24).toFixed(2));
+        const elapsedMercuryYears = parseFloat(((this.currentAge - this.pastAge) / .24).toFixed(2));
+        const remainingMercuryYears = parseFloat(((this.futureAge - this.currentAge) / .24).toFixed(2));
+        const mercuryValues = [elapsedMercuryYears, currentMercuryAge, remainingMercuryYears];
+        return mercuryValues;
     }
 
 

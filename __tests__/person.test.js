@@ -17,6 +17,6 @@ describe("SpaceAgeCalculator", () => {
 
     test("should calculate elapsed years, current age, and remaining years for Mercury", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
-        expect(person.calculateMercuryAge()).toEqual([120.83, 125, 208.33]);
+        expect(person.calculateMercuryAge()).toEqual([120.83, 125.00, 208.33]);
     });
 });

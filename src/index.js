@@ -12,7 +12,11 @@ import SpaceAgeCalculator from "./js/person";
 // Handle Form Submission
 function handleFormSubmission(event) {
     event.preventDefault();
-    const human = new SpaceAgeCalculator;
+    const pastAge = document.getElementById("pastAge").value;
+    const currentAge = document.getElementById("currentAge").value;
+    const futureAge = document.getElementById("futureAge").value;
+    console.log(pastAge);
+    const human = new SpaceAgeCalculator(pastAge, currentAge, futureAge);
     console.log(human);
 }
 
@@ -21,5 +25,6 @@ function submitButton() {
     const submitButton = document.querySelector("form");
     submitButton.addEventListener("submit", handleFormSubmission);
 }
+
 
 window.onload = submitButton;

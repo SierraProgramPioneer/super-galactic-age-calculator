@@ -13,11 +13,24 @@
     <form id="spaceAge">
 
         <div class="input-group mb-3">
-            <span class="input-group-text" id="currentAge">Current Age</span>
-            <input type="number" class="form-control" aria-describedby="currentAge">
+            <span class="input-group-text">Past Age</span>
+            <input type="number" class="form-control" id="pastAge" aria-describedby="pastAge">
         </div>
 
-        <button type="submit" id="submit">Button</button>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Current Age</span>
+            <input type="number" class="form-control" id="currentAge" aria-describedby="currentAge">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Future Age</span>
+            <input type="number" class="form-control" id="futureAge" aria-describedby="futureAge">
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">Calculate Your Galactic Ages!</button>
+        </div>
+
     </form>
 </body>
 

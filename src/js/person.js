@@ -22,7 +22,11 @@ export default class SpaceAgeCalculator {
     }
 
     calculateVenusAge() {
-
+        const currentVenusAge = parseFloat((this.currentAge / .62).toFixed(2));
+        const elapsedVenusYears = parseFloat(((this.currentAge - this.pastAge) / .62).toFixed(2));
+        const remainingVenusYears = parseFloat(((this.futureAge - this.currentAge) / .62).toFixed(2));
+        const venusValues = [elapsedVenusYears, currentVenusAge, remainingVenusYears];
+        return venusValues;
     }
 
 

@@ -29,5 +29,8 @@ export default class SpaceAgeCalculator {
         return venusValues;
     }
 
+    calculateMarsAge() {
+
+    }
 
 }

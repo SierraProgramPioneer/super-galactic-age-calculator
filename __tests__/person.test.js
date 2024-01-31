@@ -24,4 +24,9 @@ describe("SpaceAgeCalculator", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
         expect(person.calculateVenusAge()).toEqual([46.77, 48.39, 80.65]);
     });
+
+    test("should calculate elapsed years, current age, and remaining years for Mars", () => {
+        const person = new SpaceAgeCalculator(1, 30, 80);
+        expect(person.calculateMarsAge()).toEqual([15.43, 15.96, 26.60]);
+    });
 });

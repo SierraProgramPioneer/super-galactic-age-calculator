@@ -19,4 +19,9 @@ describe("SpaceAgeCalculator", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
         expect(person.calculateMercuryAge()).toEqual([120.83, 125.00, 208.33]);
     });
+
+    test("should calculate elapsed years, current age, and remaining years for Venus", () => {
+        const person = new SpaceAgeCalculator(1, 30, 80);
+        expect(person.calculateVenusAge()).toEqual([48.38, 46.77, 80.64]);
+    });
 });

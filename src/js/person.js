@@ -12,4 +12,10 @@ export default class SpaceAgeCalculator {
         const earthValues = [elapsedEarthYears, remainingEarthYears];
         return earthValues;
     }
+
+    calculateMercuryAge() {
+
+    }
+
+
 }

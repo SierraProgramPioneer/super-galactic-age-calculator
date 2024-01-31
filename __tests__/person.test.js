@@ -10,9 +10,13 @@ describe("SpaceAgeCalculator", () => {
         expect(person.futureAge).toEqual(80);
     });
 
-    test("should calculate earth years since past age and earth years until future age", () => {
+    test("should calculate earth years elapsed & remaining", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
         expect(person.calculateEarthAge()).toEqual([29, 50]);
     });
 
+    test("should calculate elapsed years, current age, and remaining years for Mercury", () => {
+        const person = new SpaceAgeCalculator(1, 30, 80);
+        expect(person.calculateMercuryAge()).toEqual([120.83, 125, 208.33]);
+    });
 });

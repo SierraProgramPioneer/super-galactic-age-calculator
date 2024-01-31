@@ -7,7 +7,7 @@ import SpaceAgeCalculator from "./js/person";
 
 // Display Results
 
-function displayResults(mercuryResults, venusResults) {
+function displayResults(mercuryResults, venusResults, earthResults, marsResults, jupiterResults) {
     const mercuryElapsed = document.getElementById("mercuryElapsed");
     mercuryElapsed.textContent = " " + mercuryResults[0];
     const mercuryCurrent = document.getElementById("mercuryCurrent");
@@ -21,6 +21,27 @@ function displayResults(mercuryResults, venusResults) {
     venusCurrent.textContent = " " + venusResults[1];
     const venusRemaining = document.getElementById("venusRemaining");
     venusRemaining.textContent = " " + venusResults[2];
+
+    const earthElapsed = document.getElementById("earthElapsed");
+    earthElapsed.textContent = " " + earthResults[0];
+    const earthCurrent = document.getElementById("earthCurrent");
+    earthCurrent.textContent = " " + earthResults[1];
+    const earthRemaining = document.getElementById("earthRemaining");
+    earthRemaining.textContent = " " + earthResults[2];
+
+    const marsElapsed = document.getElementById("marsElapsed");
+    marsElapsed.textContent = " " + marsResults[0];
+    const marsCurrent = document.getElementById("marsCurrent");
+    marsCurrent.textContent = " " + marsResults[1];
+    const marsRemaining = document.getElementById("marsRemaining");
+    marsRemaining.textContent = " " + marsResults[2];
+
+    const jupiterElapsed = document.getElementById("jupiterElapsed");
+    jupiterElapsed.textContent = " " + jupiterResults[0];
+    const jupiterCurrent = document.getElementById("jupiterCurrent");
+    jupiterCurrent.textContent = " " + jupiterResults[1];
+    const jupiterRemaining = document.getElementById("jupiterRemaining");
+    jupiterRemaining.textContent = " " + jupiterResults[2];
 }
 
 // Calculate Space Age

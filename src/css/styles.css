@@ -16,7 +16,6 @@ body {
 #results {
     text-shadow: 3px 3px #483990;
     font-size: 48px;
-    padding-bottom: 10%;
 }
 
 .column {
@@ -55,7 +54,6 @@ body {
 }
 
 #results-area {
-    margin-top: 20dvh;
     margin-left: 10%;
     margin-right: 10%;
     padding: 30px;
@@ -64,9 +62,8 @@ body {
 }
 
 
-
 img {
-    padding-top: 2em;
+    padding-top: 1em;
     align-items: center;
 }
 
@@ -89,7 +86,7 @@ img {
 } */
 
 .carousel.slide {
-    padding: 10%;
+    padding: 20%;
 }
 
 

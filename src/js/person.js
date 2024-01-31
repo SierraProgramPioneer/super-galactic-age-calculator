@@ -7,6 +7,9 @@ export default class SpaceAgeCalculator {
     }
 
     calculateEarthAge() {
-
+        const elapsedEarthYears = this.currentAge - this.pastAge;
+        const remainingEarthYears = this.futureAge - this.currentAge;
+        const earthValues = [elapsedEarthYears, remainingEarthYears];
+        return earthValues;
     }
 }

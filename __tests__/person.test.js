@@ -12,7 +12,7 @@ describe("SpaceAgeCalculator", () => {
 
     test("should calculate earth years since past age and earth years until future age", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
-        expect(person.calculateEarthAge()).toEqual([29, 30]);
+        expect(person.calculateEarthAge()).toEqual([29, 50]);
     });
 
 });

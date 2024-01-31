@@ -8,16 +8,28 @@ import SpaceAgeCalculator from "./js/person";
 // Get Age
 
 // Update User Interface
+function calculateSpaceAges(human) {
+    const earthResults = human.calculateEarthAge();
+    console.log(earthResults);
+    const mercuryResults = human.calculateMercuryAge();
+    console.log(mercuryResults);
+    const venusResults = human.calculateVenusAge();
+    console.log(venusResults);
+    const marsResults = human.calculateMarsAge();
+    console.log(marsResults);
+    const jupiterResults = human.calculateJupiterAge();
+    console.log(jupiterResults);
+}
+
 
 // Handle Form Submission
 function handleFormSubmission(event) {
     event.preventDefault();
-    const pastAge = document.getElementById("pastAge").value;
-    const currentAge = document.getElementById("currentAge").value;
-    const futureAge = document.getElementById("futureAge").value;
-    console.log(pastAge);
-    const human = new SpaceAgeCalculator(pastAge, currentAge, futureAge);
-    console.log(human);
+    const pastEarthAge = document.getElementById("pastEarthAge").value;
+    const currentEarthAge = document.getElementById("currentEarthAge").value;
+    const futureEarthAge = document.getElementById("futureEarthAge").value;
+    const human = new SpaceAgeCalculator(pastEarthAge, currentEarthAge, futureEarthAge);
+    calculateSpaceAges(human);
 }
 
 

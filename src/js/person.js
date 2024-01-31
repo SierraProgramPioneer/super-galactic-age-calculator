@@ -5,4 +5,8 @@ export default class SpaceAgeCalculator {
         this.currentAge = currentAge;
         this.futureAge = futureAge;
     }
+
+    calculateEarthAge() {
+
+    }
 }

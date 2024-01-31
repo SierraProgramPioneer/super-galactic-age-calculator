@@ -37,4 +37,12 @@ export default class SpaceAgeCalculator {
         return marsValues;
     }
 
+    calculateJupiterAge() {
+        const currentJupiterAge = parseFloat((this.currentAge / 11.86).toFixed(2));
+        const elapsedJupiterYears = parseFloat(((this.currentAge - this.pastAge) / 11.86).toFixed(2));
+        const remainingJupiterYears = parseFloat(((this.futureAge - this.currentAge) / 11.86).toFixed(2));
+        const jupiterValues = [elapsedJupiterYears, currentJupiterAge, remainingJupiterYears];
+        return jupiterValues;
+    }
+
 }

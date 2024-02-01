@@ -34,4 +34,5 @@ describe("SpaceAgeCalculator", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
         expect(person.calculateJupiterAge()).toEqual([2.45, 2.53, 4.22]);
     });
+
 });

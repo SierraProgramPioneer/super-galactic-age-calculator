@@ -9,9 +9,10 @@ export default class SpaceAgeCalculator {
     calculateEarthAge() {
         const elapsedEarthYears = this.currentEarthAge - this.pastEarthAge;
         const remainingEarthYears = this.futureEarthAge - this.currentEarthAge;
-        const earthValues = [elapsedEarthYears, remainingEarthYears];
+        const earthValues = [elapsedEarthYears, parseInt(this.currentEarthAge), remainingEarthYears];
         return earthValues;
     }
+
 
     calculateMercuryAge() {
         const currentMercuryAge = parseFloat((this.currentEarthAge / .24).toFixed(2));

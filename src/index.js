@@ -3,11 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/styles.css";
 import SpaceAgeCalculator from "./js/person";
 
-
-
 // Display Results
 
 function displayResults(mercuryResults, venusResults, earthResults, marsResults, jupiterResults) {
+
     const mercuryElapsed = document.getElementById("mercuryElapsed");
     mercuryElapsed.textContent = " " + mercuryResults[0];
     const mercuryCurrent = document.getElementById("mercuryCurrent");

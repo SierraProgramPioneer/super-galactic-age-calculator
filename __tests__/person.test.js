@@ -12,7 +12,7 @@ describe("SpaceAgeCalculator", () => {
 
     test("should calculate earth years elapsed & remaining", () => {
         const person = new SpaceAgeCalculator(1, 30, 80);
-        expect(person.calculateEarthAge()).toEqual([29, 50]);
+        expect(person.calculateEarthAge()).toEqual([29, 30, 50]);
     });
 
     test("should calculate elapsed years, current age, and remaining years for Mercury", () => {

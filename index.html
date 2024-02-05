@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Galactic Age Calculator</title>
+</head>
+
+<body>
+
+    <div class="column left">
+        <h1 class="text-center" id="ageCalculator">Super Galactic <br>Age Calculator</h1>
+        <div id="form-area">
+            <form id="spaceAge">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Past Age</span>
+                    <input type="number" class="form-control" id="pastEarthAge" aria-describedby="pastEarthAge" placeholder="Calculate Years Since This Age">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Current Age</span>
+                    <input type="number" class="form-control" id="currentEarthAge" aria-describedby="currentEarthAge" placeholder="Your Current Age">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Future Age</span>
+                    <input type="number" class="form-control" id="futureEarthAge" aria-describedby="futureEarthAge" placeholder="Calculate Years Until This Age">
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="submit">Calculate Your Galactic Ages!</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="column right">
+        <div class="hidden" id="results-area">
+            <h1 class="text-center" id="results">Results:</h1>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <img src="/src/images/mercury2.png" class="d-block w-100 planetResult">
+
+                        <div class="carousel-caption d-none d-md-block mercury">
+                            <h5>Mercury</h5>
+                            <h6>Years Elapsed:<span id="mercuryElapsed"></span></h6>
+                            <h6>Current Age:<span id="mercuryCurrent"></span></h6>
+                            <h6>Years Remaining:<span id="mercuryRemaining"></span></h6>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/src/images/venus.png" class="d-block w-100 planetResult">
+                        <div class="carousel-caption d-none d-md-block venus">
+                            <h5>Venus</h5>
+                            <h6>Years Elapsed:<span id="venusElapsed"></span></h6>
+                            <h6>Current Age:<span id="venusCurrent"></span></h6>
+                            <h6>Years Remaining:<span id="venusRemaining"></span></h6>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/src/images/earth.png" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block earth">
+                            <h5>Earth</h5>
+                            <h6>Years Elapsed:<span id="earthElapsed"></span></h6>
+                            <h6>Current Age:<span id="earthCurrent"></span></h6>
+                            <h6>Years Remaining:<span id="earthRemaining"></span></h6>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/src/images/mars.png" class="d-block w-100 planetResult">
+                        <div class="carousel-caption d-none d-md-block mars">
+                            <h5>Mars</h5>
+                            <h6>Years Elapsed:<span id="marsElapsed"></span></h6>
+                            <h6>Current Age:<span id="marsCurrent"></span></h6>
+                            <h6>Years Remaining:<span id="marsRemaining"></span></h6>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/src/images/jupiter.png" class=" d-block w-100 planetResult">
+                        <div class="carousel-caption d-none d-md-block jupiter">
+                            <h5>Jupiter</h5>
+                            <h6>Years Elapsed:<span id="jupiterElapsed"></span></h6>
+                            <h6>Current Age:<span id="jupiterCurrent"></span></h6>
+                            <h6>Years Remaining:<span id="jupiterRemaining"></span></h6>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
